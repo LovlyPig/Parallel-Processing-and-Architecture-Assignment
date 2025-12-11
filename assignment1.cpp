@@ -31,7 +31,8 @@ void find_primes_single_thread(std::ofstream &outfile) {
     double start_time = get_time_sec();
     int prime_count = 0;
     uint64_t prime_sum = 0;
-    std::priority_queue<uint32_t> top_primes;
+    // 小顶堆
+    std::priority_queue<uint32_t, std::vector<uint32_t, std::greater<uint32_t>>> top_primes;
     for (uint32_t i = 2; i <= 100000000; ++i) {
         if (is_prime(i)) {
             // outfile << i << "\n";
@@ -39,7 +40,7 @@ void find_primes_single_thread(std::ofstream &outfile) {
             prime_sum += i;
             if (prime_count < 10) {
                 top_primes.push(i);
-            } else if (i > top_primes.top()) {
+            } else {
                 top_primes.pop();
                 top_primes.push(i);
             }
