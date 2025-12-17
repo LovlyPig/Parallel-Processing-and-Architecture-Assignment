@@ -2,7 +2,4 @@
 HUST并行处理与体系结构实验
 
 # Environment
-ubuntu-22.04
-
-# Environment
 ubuntu-20.04
