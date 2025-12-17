@@ -1,6 +1,6 @@
 # Makefile
 CXX = g++
-CFLAGS = -Wall -o -std=c++17
+CFLAGS = -Wall -o2 -std=c++17
 LDFLAGS = -pthread -ltbb
 
 BUILD_DIR = build

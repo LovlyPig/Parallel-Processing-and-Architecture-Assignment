@@ -1,0 +1,11 @@
+Find Primes Single Threaded Execution:
+Execution Time: 3.79558 seconds
+Total Primes Found: 5761455
+Sum of All Primes: 279209790387276
+Top 10 Largest Primes: 99999787, 99999821, 99999827, 99999839, 99999847, 99999931, 99999941, 99999959, 99999971, 99999989, 
+
+Find Primes TBB Parallel Execution:
+Execution Time: 0.511471 seconds
+Total Primes Found: 5761467
+Sum of All Primes: 279210158752601
+Top 10 Largest Primes: 99999787, 99999821, 99999827, 99999839, 99999847, 99999931, 99999941, 99999959, 99999971, 99999989, 
