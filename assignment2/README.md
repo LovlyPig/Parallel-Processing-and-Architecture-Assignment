@@ -1,3 +1,6 @@
+# Environment
+ubuntu-20.04
+
 # Requirment
 - C++17 compiler (g++)
 - tbb
@@ -9,12 +12,13 @@ sudo apt update && sudo apt install libtbb-dev
 # build
 - compile and run
 ```
-make all
-./benchmark
+   make all
+   ./benchmark or make run
+   (Default output CSV: benchmark.csv)
 ```
-Default output CSV: benchmark.csv
 - plot
 ```
    python3 plot_results.py benchmark_results.csv
+   (Default output png: plots/result_result_{r}.png)
 ```
-Default output png: plots/result.png
+

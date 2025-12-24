@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++17 -O2 -march=native -Wall -Wextra -pthread
+CXXFLAGS = -std=c++17 -O2 -g -march=native -Wall -Wextra -pthread
 LDFLAGS = -ltbb
 
 SRCS := main.cpp
@@ -33,3 +33,5 @@ run: $(TARGET)
 clean:
 	@rm -rf $(OBJDIR) $(TARGET)
 	@echo "Cleaned $(OBJDIR) and $(TARGET)"
+	@rm -rf plots benchmark_results.csv
+	@echo "Cleaned plots and benchmark_results.csv"
